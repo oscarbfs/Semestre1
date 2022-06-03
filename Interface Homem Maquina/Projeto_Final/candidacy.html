@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/colors-highway.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/gallery.prefixed.css">
+    <link rel="stylesheet" href="css/gallery.theme.css">
+    <title>Candidatura</title>
+</head>
+<body>
+    <div class="navigation highway-blue component-container">
+        <nav class="nav-container component-padding-large">
+            <div class="logo">
+                <a href="index.html">RECRU<span>IT</span></a>
+            </div>
+            <div class="mobile-button">
+                <span style="float: right;" onclick="toggleMobileNavigation()">&#9776;</span>
+            </div>
+            <div class="links">
+                <a href="#contact">Contatos</a>
+            </div>
+            <div id="mobile-sidenav" class="mobile-links highway-blue">
+                <div class="mobile-logo" style="display: inline;">
+                    <a href="index.html" class="logo">RECRU<span>IT</span></a>
+                    <span style="width: 100%;"></span>
+                    <a href="javascript:void(0)" class="closebtn" onclick="toggleMobileNavigation()">&times;</a>
+                </div>
+                <a href="#contact" onclick="toggleMobileNavigation()">Contatos</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="candadicy container" id="about">
+        <div class="text-one">
+            <h2>Preencha o formulario abaixo e envie para que possa se candidatar.</h2>
+        </div>
+    </div>
+
+    <div class="form-candadicy container">
+        <div class="container-candidacy component-round-xlarge">
+            <form class="form highway-blue component-padding-large component-round-large" action="https://api.staticforms.xyz/submit" method="POST">
+                <input type="hidden" name="accessKey" value="ad189778-1e6c-4241-9edc-bd70f448f3e9">
+                <label for="nome">Nome</label>
+                <input type="text" id="name" name="$Nome" placeholder="Seu nome">
+                
+                <label for="email">Email</label>
+                <input type="text" id="email" name="$Email" placeholder="Seu email">
+                
+                <label for="vaga">Vaga Pretendida</label>
+                <!-- <input type="text" name="$vaga" placeholder="Vaga pretendida"> -->
+                <select name="$Vaga" id="vaga">
+                    <option value="DESENVOLVEDOR DE FRONTEND JÚNIOR">DESENVOLVEDOR DE FRONTEND JÚNIOR</option>
+                    <option value="DESENVOLVEDOR DE FRONTEND SÊNIOR">DESENVOLVEDOR DE FRONTEND SÊNIOR</option>
+                    <option value="CONSULTOR DE MARKETING DIGITAL">CONSULTOR DE MARKETING DIGITAL</option>
+                </select>
+                <br><br>
+
+                <label for="subject">Fale um pouco sobre você</label>
+                <textarea id="subject" name="$Menssagem" placeholder="Escreva alguma coisa..."
+                    style="height:200px"></textarea>
+
+                <p>Ao enviar este formulário, você concorda com nossa <a href="privacy-policy.html"
+                        target="_blank">política de privacidade</a></p><br>
+                <input class="component-metro-blue" type="submit" value="Enviar">
+                <input class="component-metro-blue" type="reset" value="Limpar">
+            </form>
+        </div>
+    </div>
+
+    <div class="contact container" id="contact">
+        <div class="short-contact">
+            <h2>Nosso Contato</h2>
+            <p class="component-xlarge">Nós gostaríamos de ouvir de você!</p>
+            <div class="component-large component-margin-top contact-info">
+                <i class="fa fa-location-arrow"></i><span style="margin-left:10px;"><a
+                        href="https://goo.gl/maps/2knQvzo8pEsV4fSH6" target="_blank">Alagoinhas, Bahia,
+                        Brasil</a></span><br>
+                <i class="fa fa-envelope-o"></i><span style="margin-left:10px;"><a
+                        href="mailto:oscar.borgesfs@gmail.com">recruit@gmail.com</a></span><br>
+                <i class="fa fa-phone"></i><span style="margin-left:10px;"><a href="+55 71 0000-0000">+55 71
+                        0000-0000</a></span><br>
+            </div>
+            <div class="component-large component-margin-top contact-info">
+                <i class="fa fa-linkedin"></i><span style="margin-left:10px;"><a href="#" target="_blank"
+                        style="text-decoration: none;">- LinkedIn</a></span><br>
+                <i class="fa fa-facebook"></i><span style="margin-left:10px;"><a href="#" target="_blank"
+                        style="text-decoration: none;">- Facebook</a></span><br>
+                <i class="fa fa-twitter"></i><span style="margin-left:10px;"><a href="#" target="_blank"
+                        style="text-decoration: none;">- Twitter</a></span><br>
+            </div>
+        </div>
+        <div class="form component-margin-top">
+            <div class="container component-round-xlarge">
+                <form class="highway-blue component-padding-large component-round-large" action="https://api.staticforms.xyz/submit" method="POST">
+                    <input type="hidden" name="accessKey" value="ad189778-1e6c-4241-9edc-bd70f448f3e9">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Seu email">
+
+                    <label for="subject">Assunto</label>
+                    <textarea id="subject" name="message" placeholder="Escreva alguma coisa..."
+                        style="height:200px"></textarea>
+
+                    <p>Ao enviar este formulário, você concorda com nossa <a href="privacy-policy.html"
+                            target="_blank">política de privacidade</a></p><br>
+                    <input class="component-metro-blue" type="submit" value="Enviar">
+                    <input class="component-metro-blue" type="reset" value="Limpar">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class=" highway-blue component-padding-large" id="footer">
+        <p class="component-center logo">© 2022 - RECRU<span>IT</span> - Todos os direitos reservados</p>
+    </div>
+
+    <script>
+        function toggleMobileNavigation() {
+            const mobileNavigation = document.getElementById("mobile-sidenav");
+            mobileNavigation.classList.toggle('mobile-links-active');
+        }
+    </script>
+</body>
+</html>
